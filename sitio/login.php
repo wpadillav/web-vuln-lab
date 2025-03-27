@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SQL Injection Lab - UNIMINUTO</title>
+    <title>SQL Injection Lab - Seguridad en el Desarrollo de Software</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
@@ -43,7 +43,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <header class="header text-center">
         <div class="container">
             <h1 class="course-title mb-3">Seguridad en el Desarrollo de Software</h1>
-            <h2 class="h4"><span class="course-code">NRC-2536</span></h2>
             <p class="lead mt-3">Laboratorio de SQL Injection</p>
         </div>
     </header>
