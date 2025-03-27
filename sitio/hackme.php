@@ -1,12 +1,9 @@
 <?php
-// hackme.php - Versión con diseño unificado
-$db = new mysqli('172.17.0.2', 'hack', 'H4ck1ng', 'hacking_class');
+$db = new mysqli('ip_base_datos', 'hack', 'H4ck1ng', 'hacking_class');
 $db->set_charset("utf8");
 
-// Verificar y agregar columna si no existe
-$check_column = $db->query("SHOW COLUMNS FROM comments LIKE 'created_at'");
-if ($check_column->num_rows == 0) {
-    $db->query("ALTER TABLE comments ADD COLUMN created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP");
+if ($db->connect_error) {
+    die("Connection failed: " . $db->connect_error);
 }
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -34,7 +31,6 @@ $comments = $db->query("SELECT * FROM comments ORDER BY created_at DESC");
     <header class="header text-center">
         <div class="container">
             <h1 class="course-title mb-3">Seguridad en el Desarrollo de Software</h1>
-            <h2 class="h4"><span class="course-code">NRC-2536</span></h2>
             <p class="lead mt-3">Laboratorio de Cross-Site Scripting (XSS)</p>
         </div>
     </header>
@@ -67,11 +63,11 @@ $comments = $db->query("SELECT * FROM comments ORDER BY created_at DESC");
         </div>
     </main>
 
-    <!-- Footer común -->
-    <footer class="footer text-center">
+     <!-- Footer -->
+     <footer class="footer text-center">
         <div class="container">
-            <p class="mb-1">© 2025 Uniminuto - Todos los derechos reservados</p>
-            <p class="mb-0">Curso NRC-2536 - Seguridad en el Desarrollo de Software</p>
+            <p class="mb-1">© 2025 wpadilla - Todos los derechos reservados</p>
+            <p class="mb-0">Curso - Seguridad en el Desarrollo de Software</p>
         </div>
     </footer>
 

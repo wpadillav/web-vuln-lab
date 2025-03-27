@@ -1,6 +1,5 @@
 <?php
-// login.php - Versión con diseño unificado
-$db = new mysqli('172.17.0.2', 'hack', 'H4ck1ng', 'hacking_class');
+$db = new mysqli('ip_base_de_datos', 'hack', 'H4ck1ng', 'hacking_class');
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
@@ -75,11 +74,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </div>
     </main>
 
-    <!-- Footer común -->
-    <footer class="footer text-center">
+    <!-- Footer -->
+     <footer class="footer text-center">
         <div class="container">
-            <p class="mb-1">© 2025 Uniminuto - Todos los derechos reservados</p>
-            <p class="mb-0">Curso NRC-2536 - Seguridad en el Desarrollo de Software</p>
+            <p class="mb-1">© 2025 wpadilla - Todos los derechos reservados</p>
+            <p class="mb-0">Curso - Seguridad en el Desarrollo de Software</p>
         </div>
     </footer>
 
