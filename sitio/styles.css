@@ -1,0 +1,110 @@
+/* styles.css - Estilos comunes para todo el laboratorio */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--light-color);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 3rem 0;
+    margin-bottom: 3rem;
+    border-bottom: 5px solid var(--accent-color);
+}
+
+.course-title {
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.course-code {
+    font-family: 'Source Code Pro', monospace;
+    background-color: rgba(0,0,0,0.2);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+}
+
+.card-vulnerability {
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+.card-vulnerability:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.card-sqli {
+    border-top: 4px solid var(--accent-color);
+}
+
+.card-xss {
+    border-top: 4px solid #f39c12;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 0;
+    margin-top: auto;
+  /*  position: absolute; */
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.lab-warning {
+    border-left: 4px solid var(--accent-color);
+    background-color: var(--light-color);
+}
+
+/* Estilos específicos para formularios */
+.vulnerability-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.code-sample {
+    font-family: 'Source Code Pro', monospace;
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.comment-box {
+    border-left: 3px solid var(--accent-color);
+    padding-left: 10px;
+    margin: 15px 0;
+}
