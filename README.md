@@ -1,4 +1,4 @@
-# Entorno de Laboratorio de Ethical Hacking con Docker
+# Entorno de Laboratorio para Ethical Hacking con Docker
 
 ## 📋 Descripción
 
